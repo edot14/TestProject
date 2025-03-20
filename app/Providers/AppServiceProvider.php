@@ -2,6 +2,11 @@
 
 namespace App\Providers;
 
+use App\Models\Job;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,7 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Unless you want to start eager loading all the time, you can use the following line to prevent lazy loading!
-        // Model::preventLazyLoading();
+        Model::preventLazyLoading();
+
+//        Gate::define('edit-job', function (User $user, Job $job) {
+//            return $job->employer->user->is($user);
+//        });
     }
 }
