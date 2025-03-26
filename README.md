@@ -49,7 +49,7 @@ Laravel Documentation
 Laracasts
 
 ## Contributing
-Thank you for considering contributing to this project! You can fork the repository and submit pull requests.
+Thank you for considering contributing to this project!! You can fork the repository and submit pull requests.
 
 ## License
 
