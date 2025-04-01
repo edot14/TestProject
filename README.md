@@ -28,17 +28,21 @@ This is a job listing and recruitment platform built using Laravel. It allows em
    git clone https://github.com/edot14/TestProject.git
    cd TestProject
 2. Install dependencies:
+   ```sh
     composer install
     npm install
 
-3. Set up the environment file:
+4. Set up the environment file:
+   ```sh
     cp .env.example .env
     php artisan key:generate
 
-4. Configure the database in .env and run migrations:
+6. Configure the database in .env and run migrations:
+   ```sh
    php artisan migrate --seed
 
-5. Start the development server:
+8. Start the development server:
+   ```sh
    php artisan serve
 ---
 ## Learning Resources
